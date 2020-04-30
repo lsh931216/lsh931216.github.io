@@ -1461,8 +1461,9 @@ end
 }
 
 
-- (void)initialBind
-{
+-   (void)initialBind
+
+    {
     _reuqesCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         
       RACSignal *requestSiganl = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
